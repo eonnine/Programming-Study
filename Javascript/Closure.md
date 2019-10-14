@@ -12,7 +12,7 @@ Javascript로 개발을 하다보면 알든 모르든 자주 쓰게 되는 기�
 
 -   클로저(Closure)의 사전적 정의는 폐쇄입니다.
 -   MDN 에서는 \`함수와 함수가 선언된 어휘적 환경(Lexical Environment)의 조합\`이라고 말합니다.
--   생활 코딩에서는 클로저(Closure)가 \`내부 함수가 외부 함수의[실행 문맥](https://jee-goo.tistory.com/entry/JavaScript-%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8Execution-Context%EB%9E%80)에 접근할 수 있는 것\`이라고 합니다.
+-   생활 코딩에서는 클로저(Closure)가 \`내부 함수가 외부 함수의 실행 문맥에 접근할 수 있는 것\`이라고 합니다.
 
 **※실행 문맥(Execution Context)이란?**
 
