@@ -221,7 +221,7 @@ bindThis(); // String {"bindTest"}
 
 ---
 
-화살표 함수는 실행될 때this를 새로 정의하지 않습니다. 대신 코드에서 바로 바깥의 함수(혹은 class)의this값이 사용됩니다.
+화살표 함수는 실행될 때 this를 새로 정의하지 않습니다. 대신 코드에서 바로 바깥의 함수(혹은 class)의this값이 사용됩니다.
 
 ```
 const bindThisArrowGlobalFn = () => console.log(this);
