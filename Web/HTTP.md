@@ -155,3 +155,4 @@ HTTPS를 사용할 경우 HTTP를 사용할 때보다 느린 문제 때문에 �
 [TCP Handshake란?](https://www.crocus.co.kr/1362)  
 [DNS 서버의 역할](https://goodgid.github.io/Server-DNS/#dns-%EC%84%9C%EB%B2%84%EB%8A%94-2%EC%A2%85%EB%A5%98)  
 [HTTPS는 HTTP보다 빠르다](https://tech.ssut.me/https-is-faster-than-http/)  
+[웹 통신의 큰 흐름](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Network)  
