@@ -53,13 +53,13 @@ Environment Record는 다음과 같은 종류가 있습니다.
 
 > ### **outer**
 
-LexicalEnvironment들의  논리적 중첩 구조(Logical nesting of Lexical Environment values)를 구현하는데 사용됩니다. 이 논리적 중첩 구조를 탐색해나가는 것을 스코프 체인이라고 합니다.
+Lexical Environment들의  논리적 중첩 구조(Logical nesting of Lexical Environment values)를 구현하는데 사용됩니다. 이 논리적 중첩 구조를 탐색해나가는 것을 스코프 체인이라고 합니다.
 
-내부 LexicalEnvironment의 outer는 해당 Lexical Environment를 논리적으로 감싸고 있는 Lexical Environment를 참조합니다. 
+내부 Lexical Environment의 outer는 해당 Lexical Environment를 논리적으로 감싸고 있는 Lexical Environment를 참조합니다. 
 
-그리고 outer LexicalEnvironment는 자체적으로 outer Lexical Environment를 가질 수 있습니다.
+그리고 outer Lexical Environment는 자체적으로 outer Lexical Environment를 가질 수 있습니다.
 
-또한, LexcialEnvironment는 여러 개의 내부 LexicalEnvironment의 outer LexcialEnvironment로서 제공될 수도 있습니다.
+또한, LexcialEnvironment는 여러 개의 내부 Lexical Environment의 outer Lexical Environment로서 제공될 수도 있습니다.
 
 ---
 
