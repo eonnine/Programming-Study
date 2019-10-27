@@ -22,23 +22,21 @@
 -   LexicalEnvironment
 -   VariableEnvironment
 
-
-
-### **- Lexical Environment**
+### **- LexicalEnvironment**
 
 해당 실행 문맥에서 생성된 변수 및 함수의 식별자(변수나 함수를 선언할 때 명시하는 이름)를 정의하는데 사용됩니다.
 
-보통 Lexical Environment는 함수 선언, 블록, try-catch문 등과 같은 ES의 특정 문법 구조와 관련되어 있으며 이러한 코드들이 실행될 때마다 새로 생성됩니다. 또한 Environment Record와 null참조를 가질 수 있는 outer로 구성됩니다.
+보통 LexicalEnvironment는 함수 선언, 블록, try-catch문 등과 같은 ES의 특정 문법 구조와 관련되어 있으며 이러한 코드들이 실행될 때마다 새로 생성됩니다. 또한 Environment Record와 null참조를 가질 수 있는 outer로 구성됩니다.
 
-Lexical Environment는 Global Environment, Function Environment, Module Environment가 있습니다.
+LexicalEnvironment는 Global Environment, Function Environment, Module Environment가 있습니다.
 
 -   Global Environment : 이 환경의 EnvironmentRecord는 빌트인 객체, 전역 객체의 바인딩 등 식별자가 미리 채워져 있을 수도 있습니다.
--   Function Environment :  ES 함수 객체의 호출에 해당하는 Lexical Environment입니다. 새로운 thisBinding을 생성할 수 있으며 super 메서드를 호출하기 위한 상태도 가지고 있습니다.
--   Module Environment : 모듈의 최상위 선언에 대한 바인딩을 포함하는 Lexical Environment입니다. 또한, 모듈에서 명시적으로 import된 바인딩을 포함하며 outer는 Global Environment를 참조합니다.
+-   Function Environment :  ES 함수 객체의 호출에 해당하는 LexicalEnvironment입니다. 새로운 thisBinding을 생성할 수 있으며 super 메서드를 호출하기 위한 상태도 가지고 있습니다.
+-   Module Environment : 모듈의 최상위 선언에 대한 바인딩을 포함하는 LexicalEnvironment입니다. 또한, 모듈에서 명시적으로 import된 바인딩을 포함하며 outer는 Global Environment를 참조합니다.
 
-### **- Variable Environment**
+### **- VariableEnvironment**
 
-Lexical Environment와 구조는 동일합니다. 다만 여기에는 var 키워드로 선언된 변수들이 저장됩니다.
+LexicalEnvironment와 구조는 동일합니다. 다만 여기에는 var 키워드로 선언된 변수들이 저장됩니다.
 
 또한, 실행 문맥이 생성될 때 LexicalEnvironment와 VariableEnvironment는 초기에 동일한 값을 갖습니다.
 
@@ -55,13 +53,13 @@ Environment Record는 다음과 같은 종류가 있습니다.
 
 > ### **outer**
 
-Lexical Environment들의  논리적 중첩 구조(Logical nesting of Lexical Environment values)를 구현하는데 사용됩니다. 이 논리적 중첩 구조를 탐색해나가는 것을 스코프 체인이라고 합니다.
+LexicalEnvironment들의  논리적 중첩 구조(Logical nesting of Lexical Environment values)를 구현하는데 사용됩니다. 이 논리적 중첩 구조를 탐색해나가는 것을 스코프 체인이라고 합니다.
 
-내부 Lexical Environment의 outer는 해당 Lexical Environment를 논리적으로 감싸고 있는 Lexical Environment를 참조합니다. 
+내부 LexicalEnvironment의 outer는 해당 Lexical Environment를 논리적으로 감싸고 있는 Lexical Environment를 참조합니다. 
 
-그리고 outer Lexical Environment는 자체적으로 outer Lexical Environment를 가질 수 있습니다.
+그리고 outer LexicalEnvironment는 자체적으로 outer Lexical Environment를 가질 수 있습니다.
 
-또한, Lexcial Environment는 여러 개의 내부 Lexical Environment의 outer Lexcial Environment로서 제공될 수도 있습니다.
+또한, LexcialEnvironment는 여러 개의 내부 LexicalEnvironment의 outer LexcialEnvironment로서 제공될 수도 있습니다.
 
 ---
 
@@ -248,4 +246,5 @@ bindThisTest();
 
 #### **\# 참고 문서**
 
-[https://tc39.es/ecma262/](https://tc39.es/ecma262/)[ECMAScript® 2020 Language Specificationtc39.es](https://tc39.es/ecma262/)
+[https://tc39.es/ecma262/](https://tc39.es/ecma262/)  
+[ECMAScript® 2020 Language Specificationtc39.es](https://tc39.es/ecma262/)
